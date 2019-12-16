@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.3;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+/***** GRID *******/
+/*
+.row {
+    display: flex;
+    width: 100%;
+}
+*/
+
+.row::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+
+.col-2 {width: 16.66%;}
+
+.col-3 {width: 25%;}
+
+.col-4 {width: 33.33%;}
+
+.col-5 {width: 41.66%;}
+
+.col-6 { width: 50%;}
+
+.col-7 {width: 58.33%;}
+
+.col-8 {width: 66.66%;}
+
+.col-9 {width: 75%;}
+
+.col-10 {width: 83.33%;}
+
+.col-11 {width: 91.66%;}
+
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+/*****  CUSTOM STYLES ******/
+
+/*   h2 hrsdings - before and after     */
+
+h2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h2:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: orange;
+    width: 140px;
+}
+h2:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: orange;
+    width: 140px;
+}
+
+
+/*   header     */
+.top-bar {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+.top-bar i {
+    color: orange;
+}
+header {
+    background-image: linear-gradient(rgba(51, 51, 51, 0.99), rgba(51, 51, 51, 0.4)) , url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+nav {
+    padding: 20px 50px;
+    overflow: auto;
+}
+.logo {
+    float: left;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+.logo span {
+    color: orange;
+}
+.logo:hover {
+    color: orange;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 1.4rem;
+}
+nav ul li a:hover {
+    color: orange;
+}
+.hgroup {
+    padding: 100px;
+    text-align: center;
+}
+.hgroup h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 4px;
+}
+.hgroup h3 {
+    color: white;
+    padding: 20px 0
+}
+button {
+    padding: 20px 60px;
+    font-size: 1.4rem;
+    background: orange;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+}
+button:hover {
+    background: white;
+}
+
+/*   services     */
+
+.services h2 {
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+.services i {
+    display: block;
+    background: orange;
+    padding: 25px;
+    border-radius: 50%;
+    color: white;
+}
+.services .col-10 {
+    padding: 0px 20px 40px;
+}
+
+/*   history    */
+
+.history {
+   background: #f7f7f7; 
+}
+.history h2 {
+    padding-bottom: 20px;
+}
+.history h4 {
+    padding: 0 0 20px 0;
+}
+.history p {
+    padding: 0 0 20px 0;
+}
+.history .text {
+    padding: 80px 50px;
+}
+.history .image img {
+    width: 100%;
+    padding-top: 40px;
+}
+
+/*   projects    */
+
+.commercial {
+    background-image: url(img/commercial.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.technology {
+    background-image: url(img/technology.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.cultural {
+    background-image: url(img/cultural.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.educational {
+    background-image: url(img/educational.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.goverment {
+    background-image: url(img/goverment.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.healtcare {
+    background-image: url(img/healtcare.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.industrial {
+    background-image: url(img/industrial.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.logistics {
+    background-image: url(img/logistics.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.projects .col-3 {
+    position: relative;
+}
+.projects h3 {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    display: inline-block;
+    background: rgba(255, 165, 0, 0.7);
+    padding: 20px 30px;
+    color: white;
+    letter-spacing: 2px;
+}
+.projects h2 {
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+/*   news     */
+
+.news h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.news h3 {
+    padding-top: 15px
+}
+.news img {
+    width: 90%;
+}
+.date {
+    color: orange;
+}
+.author {
+    font-style: italic;
+}
+.news p {
+    padding: 20px 35px 0 0
+}
+
+/*   footer     */
+
+footer {
+    padding: 10px 0;
+    background: #333;
+    color: white
+}
+footer h3 {
+    text-transform: uppercase;
+    padding-bottom: 20px
+}
+footer .brand  {
+    padding: 40px 35px;
+}
+.brand p {
+    line-height: 1.6;
+}
+.navigation {
+    padding: 40px 35px;
+}
+.navigation ul li  {
+    list-style: none;
+}
+.navigation ul li a {
+    color: white;
+    line-height: 1.7;
+}
+.contacts {
+    padding: 40px 35px;
+}
+.contacts ul li {
+    list-style: none;
+    line-height: 2.2;
+}
+.contacts i {
+    color: orange;
+}
+
+/*   bottom bar     */
+.bottom-bar {
+    background: #222;
+    padding: 5px;
+    color: white;
+}
+.bottom-bar i {
+    color: orange;
+}
+
+
+
+@media(max-width: 768px) {
+    [class*="col-"] {
+        float: left;
+        width: 100%;
+    }
+    .top-bar {
+        display: none;
+    }
+    nav {
+        text-align: center;
+    }
+    header {
+        height: 70vh;
+    }
+    .logo {
+        margin-left: 25px;
+    }
+    .hgroup {
+        text-align: center;
+    }
+    .hgroup h1 {
+        font-size: 2rem;
+    }
+    .hgroup {
+        padding: 50px;
+        text-align: center;
+    }
+    .services h2 {
+        font-size: 1.1rem;
+    }
+    .services i {
+        display: inline-block;
+        background: orange;
+        padding: 25px;
+        border-radius: 50%;
+        color: white;
+/*        transform: translate(200px);*/
+        margin-left: 200px;
+    }
+    .services .col-10  {
+        text-align: center;
+        margin-top: 20px;
+    }
+    h2:after {
+        display: inline-block;
+        margin: 0 0 8px 20px;
+        height: 3px;
+        content: " ";
+        text-shadow: none;
+        background-color: orange;
+        width: 100px;
+    }
+    h2:before {
+        display: inline-block;
+        margin: 0 20px 8px 0;
+        height: 3px;
+        content: " ";
+        text-shadow: none;
+        background-color: orange;
+        width: 100px;
+    }
+    .history .text h2 {
+        font-size: 0.9rem;
+    }
+    .projects h2 {
+        font-size: 1.1rem;
+    }
+    .projects h3 {
+        position: absolute;
+        top: 100px;
+        left: 160px;
+    }
+    .news h2 {
+        font-size: 1.1rem;
+    }
+    .bottom-bar .col-7 p {
+        text-align: center;
+    }
+    .bottom-bar .icons {
+        display: flex;
+        flex: 1;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
